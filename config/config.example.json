@@ -1,0 +1,53 @@
+{
+  "data_sources": {
+    "alpha_vantage_key": "YOUR_ALPHA_VANTAGE_API_KEY",
+    "twelve_data_key": "YOUR_TWELVE_DATA_API_KEY",
+    "preferred_provider": "yfinance"
+  },
+  "alerts": {
+    "email_enabled": true,
+    "email_smtp_server": "smtp.gmail.com",
+    "email_smtp_port": 587,
+    "email_username": "your-email@gmail.com",
+    "email_password": "your-app-password",
+    "email_recipients": [
+      "recipient1@example.com",
+      "recipient2@example.com"
+    ],
+    
+    "sms_enabled": false,
+    "sms_provider": "twilio",
+    "sms_api_key": "YOUR_TWILIO_ACCOUNT_SID",
+    "sms_api_secret": "YOUR_TWILIO_AUTH_TOKEN",
+    "sms_recipients": [
+      "+1234567890"
+    ],
+    
+    "webhook_enabled": false,
+    "webhook_url": "https://your-webhook-url.com/alerts",
+    
+    "cooldown_minutes": 60
+  },
+  "rsi_settings": {
+    "default_period": 14,
+    "overbought_threshold": 70,
+    "oversold_threshold": 30,
+    "update_interval_seconds": 300
+  },
+  "dashboard": {
+    "host": "0.0.0.0",
+    "port": 8080,
+    "debug": false
+  },
+  "database": {
+    "enabled": true,
+    "type": "sqlite",
+    "path": "data/rsi_tracker.db"
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/rsi_tracker.log",
+    "max_size_mb": 10,
+    "backup_count": 5
+  }
+}
