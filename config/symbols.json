@@ -1,0 +1,61 @@
+{
+  "watchlists": {
+    "stocks": {
+      "name": "Popular Stocks",
+      "symbols": [
+        "AAPL", "GOOGL", "MSFT", "AMZN", "TSLA",
+        "NVDA", "META", "NFLX", "AMD", "CRM"
+      ],
+      "timeframe": "1h",
+      "overbought": 70,
+      "oversold": 30
+    },
+    "crypto": {
+      "name": "Major Cryptocurrencies",
+      "symbols": [
+        "BTC/USD", "ETH/USD", "BNB/USD", "XRP/USD",
+        "ADA/USD", "SOL/USD", "DOT/USD", "MATIC/USD"
+      ],
+      "timeframe": "15m",
+      "overbought": 75,
+      "oversold": 25
+    },
+    "forex": {
+      "name": "Major Currency Pairs",
+      "symbols": [
+        "EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF",
+        "AUD/USD", "USD/CAD", "NZD/USD"
+      ],
+      "timeframe": "1h",
+      "overbought": 70,
+      "oversold": 30
+    },
+    "commodities": {
+      "name": "Commodities",
+      "symbols": [
+        "GLD", "SLV", "USO", "GAS", "DBA"
+      ],
+      "timeframe": "4h",
+      "overbought": 70,
+      "oversold": 30
+    }
+  },
+  "custom_symbols": [
+    {
+      "symbol": "SPY",
+      "name": "S&P 500 ETF",
+      "timeframe": "1d",
+      "overbought": 70,
+      "oversold": 30,
+      "alerts_enabled": true
+    },
+    {
+      "symbol": "QQQ",
+      "name": "Nasdaq ETF",
+      "timeframe": "1d",
+      "overbought": 70,
+      "oversold": 30,
+      "alerts_enabled": true
+    }
+  ]
+}
